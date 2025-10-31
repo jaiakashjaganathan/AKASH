@@ -26,12 +26,12 @@
       display: inline-block;
     }
 
-    /* Hide the checkbox */
+   
     #toggle {
       display: none;
     }
 
-    /* Profile icon */
+   
     .profile-label {
       margin-left: -50px;
       width: 40px;
@@ -45,7 +45,7 @@
       font-weight: bold;
     }
 
-    /* Settings panel */
+   
     .settings {
       display: none;
       position: absolute;
@@ -59,7 +59,7 @@
       width: 150px;
     }
 
-    /* Show settings when checkbox is checked */
+
     #toggle:checked + .profile-label + .settings {
       display: block;
     }
@@ -210,14 +210,14 @@ body {
 }
 
 
-/* Search box layout */
+
 .search-container {
   display: flex;
   gap: 10px;
   margin-bottom: 20px;
 }
 
-/* Input styling */
+
 .search-input {
   padding: 10px;
   font-size: 16px;
@@ -226,7 +226,7 @@ body {
   border-radius: 4px;
 }
 
-/* Button styling */
+
 .search-button {
   padding: 10px 20px;
   font-size: 16px;
@@ -241,7 +241,7 @@ body {
   background-color: #005A9E;
 }
 
-/* Result message */
+
 .result-message {
   font-size: 18px;
  margin-left: -20px;
@@ -556,12 +556,10 @@ function handleSearch() {
     result.textContent = `You searched for: "${input}"`;
    
 
-    // Optional: redirect to another page
-    // window.location.href = `results.html?q=${encodeURIComponent(input)}`;
-  }
+   
 }
 
-  // Optional: Trigger search on Enter key
+
   document.getElementById("searchInput").addEventListener("keypress", function(event) {
     if (event.key === "Enter") {
       handleSearch();
@@ -586,7 +584,7 @@ const icon = document.getElementById('notification-icon');
     const panel = document.getElementById('notification-panel');
 
     icon.addEventListener('click', (e) => {
-      e.stopPropagation(); // Prevent click from bubbling to document
+      e.stopPropagation(); 
       panel.classList.toggle('show');
     });
 
